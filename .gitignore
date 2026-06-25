@@ -1,0 +1,287 @@
+# =============================================================================
+# Projekt Melware — .gitignore
+# Covers: Python, Rust/Cargo, C++/CMake, Node.js, ROS, and OS/IDE artifacts
+# =============================================================================
+
+
+
+EfficientPS/
+OpenPSG/
+iceoryx2/
+opencv/
+spaCy/
+turso/
+voicebox/
+zenoh/
+manyears/
+rmw_iceoryx2/
+soar_ros/
+projects/
+
+
+# -----------------------------------------------------------------------------
+# OS & System Files
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# -----------------------------------------------------------------------------
+# IDE & Editor Files
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.code-workspace
+
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+*.whl
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+
+# -----------------------------------------------------------------------------
+# Rust / Cargo
+# -----------------------------------------------------------------------------
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+
+# -----------------------------------------------------------------------------
+# C++ / CMake
+# -----------------------------------------------------------------------------
+# Build directories
+build/
+cmake-build-*/
+_build/
+out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_CPack_Packages/
+*.cmake
+!CMakeLists.txt
+
+# Compiled binaries & objects
+*.o
+*.obj
+*.so
+*.so.*
+*.a
+*.lib
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+# Debug symbols
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Conan (C++ package manager)
+conan.lock
+conaninfo.txt
+conanbuildinfo.*
+graph_info.json
+
+
+# -----------------------------------------------------------------------------
+# ROS / ROS2 (soar_ros, rmw_iceoryx2)
+# -----------------------------------------------------------------------------
+devel/
+install/
+log/
+.catkin_workspace
+.catkin_tools/
+*.pyc
+
+
+# -----------------------------------------------------------------------------
+# Node.js / npm (voicebox)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build output
+dist/
+.next/
+.nuxt/
+.cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Lock files (keep package-lock.json or yarn.lock — comment out if you want to track them)
+# package-lock.json
+# yarn.lock
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+
+# -----------------------------------------------------------------------------
+# Logs & Databases
+# -----------------------------------------------------------------------------
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+
+# -----------------------------------------------------------------------------
+# Compiled & Temporary Files
+# -----------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.patch
+
+
+# -----------------------------------------------------------------------------
+# Archives
+# -----------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+
+# -----------------------------------------------------------------------------
+# Large Binary / Model Files (EfficientPS, OpenPSG, manyears)
+# -----------------------------------------------------------------------------
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.pb
+*.onnx
+*.tflite
+*.safetensors
+*.weights
+
+
+# -----------------------------------------------------------------------------
+# OpenCV / Image & Video Artifacts
+# -----------------------------------------------------------------------------
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+
+# -----------------------------------------------------------------------------
+# Secrets & Credentials
+# -----------------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+.secrets
+secrets.json
+credentials.json
